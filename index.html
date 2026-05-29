@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advantage Roofing | Professional Roofing Services in Darlington</title>
+  <meta name="description" content="Professional roofing services in Darlington. Roof repairs, new roofs, flat roofing, guttering & emergency roofing solutions." />
+  <meta name="keywords" content="roofing Darlington, roof repairs, flat roofing, emergency roofing, roof installation, guttering Darlington" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Advantage Roofing" />
+  <meta property="og:title" content="Advantage Roofing | Professional Roofing Services in Darlington" />
+  <meta property="og:description" content="Professional roofing services in Darlington. Roof repairs, new roofs, flat roofing, guttering & emergency roofing solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://advantageroofing.co.uk" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+
+  <style>
+    /* ===== CSS Custom Properties ===== */
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #3b82f6;
+      --primary-gradient: linear-gradient(135deg, var(--primary), var(--primary-light));
+      --dark: #0f172a;
+      --dark-light: #1e293b;
+      --text: #111827;
+      --text-muted: #64748b;
+      --text-light: #475569;
+      --bg: #f5f8fc;
+      --bg-white: #ffffff;
+      --bg-blue: #eff6ff;
+      --border: rgba(0,0,0,0.06);
+      --shadow-sm: 0 10px 25px rgba(15,23,42,0.04);
+      --shadow-md: 0 15px 40px rgba(15,23,42,0.05);
+      --shadow-lg: 0 25px 50px rgba(15,23,42,0.1);
+      --shadow-btn: 0 10px 25px rgba(37,99,235,0.25);
+      --radius-sm: 16px;
+      --radius-md: 24px;
+      --radius-lg: 28px;
+      --radius-full: 999px;
+      --transition: 0.3s ease;
+      --transition-slow: 0.4s ease;
+      --max-width: 1280px;
+      --header-height: 74px;
+    }
+
+    /* ===== Reset & Base ===== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Utility Classes ===== */
+    .container {
+      width: 90%;
+      max-width: var(--max-width);
+      margin-inline: auto;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      background: var(--primary-gradient);
+      color: white;
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: var(--shadow-btn);
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(37,99,235,0.35);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.5);
+    }
+
+    .btn-secondary:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 3px;
+    }
+
+    /* ===== Section Styles ===== */
+    section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--dark);
+      margin-bottom: 14px;
+      font-weight: 800;
+    }
+
+    .section-title p {
+      max-width: 650px;
+      margin-inline: auto;
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    /* ===== Header / Navigation ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow var(--transition);
+      height: var(--header-height);
+    }
+
+    header.scrolled {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: var(--header-height);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-light);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width var(--transition);
+      border-radius: 2px;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Mobile Menu Toggle */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1000;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 26px;
+      height: 2.5px;
+      background: var(--dark);
+      border-radius: 4px;
+      transition: var(--transition);
+      transform-origin: center;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1974&auto=format&fit=crop') center/cover;
+      color: white;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 700px;
+      padding-top: calc(var(--header-height) + 20px);
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      margin-bottom: 28px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      margin-bottom: 24px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #dbeafe;
+      margin-bottom: 36px;
+      max-width: 600px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* Floating Card */
+    .floating-card {
+      position: absolute;
+      right: 6%;
+      bottom: 10%;
+      background: var(--bg-white);
+      color: var(--dark);
+      padding: 28px 32px;
+      border-radius: var(--radius-md);
+      width: 320px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .floating-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .floating-card p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 18px;
+      font-size: 0.95rem;
+    }
+
+    /* ===== Services Section ===== */
+    #services {
+      background: var(--bg);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      padding: 36px 32px;
+      border-radius: var(--radius-lg);
+      transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+      flex-shrink: 0;
+    }
+
+    .service-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+
+    /* ===== About Section ===== */
+    .about {
+      background: var(--bg-white);
+    }
+
+    .about-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .about-image:hover img {
+      transform: scale(1.03);
+    }
+
+    .about-content h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .about-content p {
+      color: var(--text-muted);
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+
+    .stats {
+      margin-top: 32px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      background: var(--bg-blue);
+      padding: 20px 24px;
+      border-radius: 18px;
+      min-width: 130px;
+      flex: 1;
+    }
+
+    .stat-box h3 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .stat-box span {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    /* ===== Why Us Section ===== */
+    .why-us {
+      background: linear-gradient(180deg, var(--bg-blue), #f8fbff);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .why-card {
+      background: var(--bg-white);
+      padding: 32px 28px;
+      border-radius: var(--radius-md);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-slow);
+    }
+
+    .why-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .why-card .service-icon {
+      margin-inline: auto;
+    }
+
+    .why-card h3 {
+      margin: 18px 0 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .why-card p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+
+    /* ===== Gallery Section ===== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    /* ===== CTA Section ===== */
+    .cta-wrapper {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      text-align: center;
+      border-radius: 40px;
+      padding: 70px 40px;
+    }
+
+    .cta-wrapper h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .cta-wrapper p {
+      max-width: 600px;
+      margin-inline: auto;
+      line-height: 1.8;
+      margin-bottom: 32px;
+      color: #dbeafe;
+      font-size: 1.05rem;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 40px;
+    }
+
+    .contact-card {
+      background: var(--bg-white);
+      padding: 40px 36px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .contact-card h3 {
+      margin-bottom: 24px;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .contact-item .icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-map {
+      width: 100%;
+      height: 260px;
+      border: 0;
+      border-radius: 18px;
+      margin-top: 24px;
+    }
+
+    /* ===== Form Styles ===== */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 16px 18px;
+      border: 1.5px solid #dbe3ee;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      background: var(--bg);
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-success {
+      display: none;
+      background: #ecfdf5;
+      color: #065f46;
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      border: 1px solid #a7f3d0;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 48px 0;
+      margin-top: 100px;
+    }
+
+    .footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand .logo {
+      color: white;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .footer-brand p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      max-width: 350px;
+    }
+
+    .footer-copy {
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    /* ===== Scrollbar ===== */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b;
+    }
+
+    /* ===== Animations ===== */
+    @media (prefers-reduced-motion: no-preference) {
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .floating-card {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--bg-white);
+        flex-direction: column;
+        padding: 100px 32px 40px;
+        gap: 24px;
+        box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+        transition: right 0.35s ease;
+        align-items: flex-start;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .nav-links a {
+        font-size: 1.1rem;
+      }
+
+      .nav-links .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero p {
+        margin-inline: auto;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .about-wrapper {
+        gap: 40px;
+      }
+
+      .stats {
+        flex-direction: column;
+      }
+
+      .cta-wrapper {
+        padding: 50px 28px;
+        border-radius: 28px;
+      }
+
+      .contact-wrapper {
+        gap: 28px;
+      }
+
+      .footer-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-brand p {
+        margin-inline: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .service-card {
+        padding: 28px 24px;
+      }
+
+      .contact-card {
+        padding: 28px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header role="banner">
+    <div class="container">
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="Advantage Roofing Home">Advantage <span>Roofing</span></a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a href="#services" role="menuitem">Services</a></li>
+          <li role="none"><a href="#about" role="menuitem">About</a></li>
+          <li role="none"><a href="#gallery" role="menuitem">Projects</a></li>
+          <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+          <li role="none"><a href="#contact" class="btn" role="menuitem">Get Free Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" aria-label="Hero banner">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span aria-hidden="true">🏆</span>
+          Trusted Roofing Specialists in Darlington
+        </div>
+
+        <h1>Professional Roofing Solutions Built To Last</h1>
+
+        <p>
+          Advantage Roofing delivers high-quality roofing services across Darlington and surrounding areas. From roof repairs and flat roofing to full roof replacements, we provide reliable workmanship with a modern customer experience.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">
+            Request Free Estimate
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#services" class="btn-secondary">Explore Services</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-card" aria-label="Emergency services">
+      <h3>24/7 Emergency Roof Repairs</h3>
+      <p>
+        Fast response roofing experts available for leaks, storm damage, broken tiles, and urgent roofing problems.
+      </p>
+      <a href="#contact" class="btn">Call Our Team</a>
+    </div>
+  </section>
+
+  <!-- ===== Services Section ===== -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="services-title">Our Roofing Services</h2>
+        <p>
+          We provide a full range of residential and commercial roofing services with premium quality materials and expert craftsmanship.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card fade-in">
+          <div class="service-icon" aria-hidden="true">🏠</div>
+          <h3>New Roof Installations</h3>
+          <p>Durable and stylish roofing systems designed for long-lasting protection and improved property value.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon" aria-hidden="true">🔧</div>
+          <h3>Roof Repairs</h3>
+          <p>Professional roof repair services for leaks, cracked tiles, damaged flashing, and storm-related issues.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon" aria-hidden="true">🧱</div>
+          <h3>Flat Roofing</h3>
+          <p>Modern flat roofing solutions including EPDM rubber roofing, felt roofing, and GRP fibreglass systems.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon" aria-hidden="true">🌧️</div>
+          <h3>Guttering & Fascias</h3>
+          <p>High-performance guttering, soffits, and fascia installations to protect your home from water damage.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon" aria-hidden="true">⚡</div>
+          <h3>Emergency Roofing</h3>
+          <p>Rapid emergency call-outs for storm damage, roof leaks, and urgent roofing repairs throughout the area.</p>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-icon" aria-hidden="true">🏗️</div>
+          <h3>Chimney Work</h3>
+          <p>Chimney repairs, repointing, lead work, and rebuilds completed safely by experienced professionals.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-image fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1974&auto=format&fit=crop"
+            alt="Advantage Roofing professional team working on a roofing project"
+            loading="lazy"
+            width="800"
+            height="600"
+          />
+        </div>
+
+        <div class="about-content fade-in">
+          <h2 id="about-title">Experienced Roofing Contractors You Can Trust</h2>
+
+          <p>
+            At Advantage Roofing, we combine traditional workmanship with modern roofing techniques to deliver reliable roofing services across Darlington.
+          </p>
+
+          <p>
+            Our skilled roofing specialists focus on quality, safety, and customer satisfaction on every single project — no matter the size.
+          </p>
+
+          <div class="stats">
+            <div class="stat-box">
+              <h3>15+</h3>
+              <span>Years Experience</span>
+            </div>
+            <div class="stat-box">
+              <h3>900+</h3>
+              <span>Completed Projects</span>
+            </div>
+            <div class="stat-box">
+              <h3>24/7</h3>
+              <span>Emergency Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why Us Section ===== -->
+  <section class="why-us" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="why-title">Why Choose Advantage Roofing?</h2>
+        <p>We are committed to delivering exceptional workmanship, transparent pricing, and dependable roofing services.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="service-icon" aria-hidden="true">⭐</div>
+          <h3>Top Rated Service</h3>
+          <p>Highly rated local roofing specialists trusted by homeowners and businesses.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="service-icon" aria-hidden="true">🛡️</div>
+          <h3>Guaranteed Work</h3>
+          <p>All roofing work completed to high standards with reliable workmanship guarantees.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="service-icon" aria-hidden="true">💷</div>
+          <h3>Free Quotes</h3>
+          <p>Competitive pricing and free no-obligation roofing estimates for every project.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="service-icon" aria-hidden="true">🚚</div>
+          <h3>Fast Response</h3>
+          <p>Quick response times for emergency roofing and urgent property repairs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery Section ===== -->
+  <section id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="gallery-title">Recent Roofing Projects</h2>
+        <p>Explore some of our recently completed roofing projects and workmanship across the local area.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1632759145351-1d5927d4f626?q=80&w=1932&auto=format&fit=crop"
+            alt="Completed residential roofing project with new tiles"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        </div>
+
+        <div class="gallery-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070&auto=format&fit=crop"
+            alt="Modern house with newly installed roofing system"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        </div>
+
+        <div class="gallery-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop"
+            alt="Contemporary roof installation project"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        </div>
+
+        <div class="gallery-item fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2070&auto=format&fit=crop"
+            alt="Professional roof installation in progress"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Section ===== -->
+  <section aria-label="Call to action">
+    <div class="container">
+      <div class="cta-wrapper fade-in">
+        <h2>Need Reliable Roofing Experts?</h2>
+        <p>Contact Advantage Roofing today for trusted roofing services, fast response times, and free professional advice.</p>
+        <a href="#contact" class="btn">
+          Get Your Free Quote Today
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="contact-title">Contact Us</h2>
+        <p>Speak with our friendly roofing specialists today and get a free no-obligation estimate for your project.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-card fade-in">
+          <h3>Business Information</h3>
+
+          <div class="contact-item">
+            <span class="icon" aria-hidden="true">📍</span>
+            <span>Darlington, United Kingdom</span>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon" aria-hidden="true">📞</span>
+            <a href="tel:+441234567890" aria-label="Call us at +44 1234 567890">+44 1234 567890</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon" aria-hidden="true">✉️</span>
+            <a href="mailto:info@advantageroofing.co.uk" aria-label="Email us at info@advantageroofing.co.uk">info@advantageroofing.co.uk</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon" aria-hidden="true">🕒</span>
+            <span>Monday - Saturday : 8AM - 6PM</span>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps?q=Advantage+Roofing+Darlington&output=embed"
+            width="100%"
+            height="260"
+            class="contact-map"
+            allowfullscreen=""
+            loading="lazy"
+            title="Advantage Roofing location on Google Maps">
+          </iframe>
+        </div>
+
+        <div class="contact-card fade-in">
+          <h3>Request A Free Quote</h3>
+
+          <form id="quoteForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Email Address" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell us about your roofing project...</label>
+              <textarea id="message" name="message" placeholder="Tell us about your roofing project..." required></textarea>
+            </div>
+
+            <div class="form-success" id="formSuccess" role="status">
+              ✓ Thank you! Your message has been sent successfully. We'll get back to you shortly.
+            </div>
+
+            <button type="submit" class="btn" id="submitBtn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="Advantage Roofing Home">Advantage <span>Roofing</span></a>
+          <p>Professional roofing services across Darlington & surrounding areas.</p>
+        </div>
+        <p class="footer-copy">© 2026 Advantage Roofing. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // DOM Elements
+      const header = document.querySelector('header');
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      const form = document.getElementById('quoteForm');
+      const formSuccess = document.getElementById('formSuccess');
+      const submitBtn = document.getElementById('submitBtn');
+
+      // ===== Scroll Effect for Header =====
+      function handleScroll() {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+
+      // Throttled scroll handler for performance
+      let ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            handleScroll();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+
+      // ===== Mobile Menu Toggle =====
+      menuToggle.addEventListener('click', function() {
+        const isActive = navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', isActive);
+      });
+
+      // Close mobile menu when a link is clicked
+      navLinks.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Close mobile menu on Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // ===== Form Handling =====
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Basic validation
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !phone || !message) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+
+        // Disable button to prevent double submission
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        // Simulate form submission
+        setTimeout(function() {
+          formSuccess.classList.add('visible');
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Message';
+
+          // Auto-hide success message after 5 seconds
+          setTimeout(function() {
+            formSuccess.classList.remove('visible');
+          }, 5000);
+        }, 800);
+      });
+
+      // ===== Intersection Observer for Fade-in Animations =====
+      if ('IntersectionObserver' in window) {
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        // Fallback: show all fade-in elements immediately
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+          el.classList.add('visible');
+        });
+      }
+
+      // ===== Smooth anchor scroll (fallback for older browsers) =====
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            const headerOffset = 80;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
